@@ -44,7 +44,7 @@ export class TodoListView {
 	#createTemplate({ title, description, itemId, completed }) {
 		const todoItem = this.createElement("div", "col-4");
 		const taskWrapper = this.createElement("div", "taskWrapper");
-		taskWrapper.setAttribute(`data-todo-item-${itemId}`, '');
+		todoItem.setAttribute(`data-todo-item-${itemId}`, '');
 		todoItem.append(taskWrapper);
 
 		const taskHeading = this.createElement("div", "taskHeading", title);
